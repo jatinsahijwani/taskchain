@@ -236,7 +236,7 @@ export default function Userdashboard() {
   )
 }
 
-function CalendarIcon(props) {
+function CalendarIcon(props: any) {
   return (
     <svg
       {...props}
@@ -259,7 +259,7 @@ function CalendarIcon(props) {
 }
 
 
-function ClipboardIcon(props) {
+function ClipboardIcon(props: any) {
   return (
     <svg
       {...props}
@@ -280,7 +280,7 @@ function ClipboardIcon(props) {
 }
 
 
-function ClipboardListIcon(props) {
+function ClipboardListIcon(props: any) {
   return (
     <svg
       {...props}
@@ -305,7 +305,7 @@ function ClipboardListIcon(props) {
 }
 
 
-function DollarSignIcon(props) {
+function DollarSignIcon(props: any) {
   return (
     <svg
       {...props}
@@ -326,7 +326,7 @@ function DollarSignIcon(props) {
 }
 
 
-function LayoutGridIcon(props) {
+function LayoutGridIcon(props: any) {
   return (
     <svg
       {...props}
@@ -349,7 +349,7 @@ function LayoutGridIcon(props) {
 }
 
 
-function Package2Icon(props) {
+function Package2Icon(props: any) {
   return (
     <svg
       {...props}
@@ -371,7 +371,7 @@ function Package2Icon(props) {
 }
 
 
-function SearchIcon(props) {
+function SearchIcon(props: any) {
   return (
     <svg
       {...props}
@@ -392,7 +392,7 @@ function SearchIcon(props) {
 }
 
 
-function SettingsIcon(props) {
+function SettingsIcon(props: any) {
   return (
     <svg
       {...props}
@@ -413,7 +413,7 @@ function SettingsIcon(props) {
 }
 
 
-function UserIcon(props) {
+function UserIcon(props: any) {
   return (
     <svg
       {...props}

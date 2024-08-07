@@ -185,7 +185,7 @@ export function TaskMasterHomePage() {
   )
 }
 
-function ClockIcon(props) {
+function ClockIcon(props: any) {
   return (
     <svg
       {...props}
@@ -206,7 +206,7 @@ function ClockIcon(props) {
 }
 
 
-function ListIcon(props) {
+function ListIcon(props: any) {
   return (
     <svg
       {...props}
@@ -231,7 +231,7 @@ function ListIcon(props) {
 }
 
 
-function SearchIcon(props) {
+function SearchIcon(props: any) {
   return (
     <svg
       {...props}
@@ -252,7 +252,7 @@ function SearchIcon(props) {
 }
 
 
-function SettingsIcon(props) {
+function SettingsIcon(props: any) {
   return (
     <svg
       {...props}
@@ -273,7 +273,7 @@ function SettingsIcon(props) {
 }
 
 
-function TimerIcon(props) {
+function TimerIcon(props: any) {
   return (
     <svg
       {...props}
@@ -295,7 +295,7 @@ function TimerIcon(props) {
 }
 
 
-function UserIcon(props) {
+function UserIcon(props: any) {
   return (
     <svg
       {...props}
@@ -316,7 +316,7 @@ function UserIcon(props) {
 }
 
 
-function WalletIcon(props) {
+function WalletIcon(props: any) {
   return (
     <svg
       {...props}
