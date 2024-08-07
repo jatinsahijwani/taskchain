@@ -18,18 +18,19 @@ export function TaskMasterHomePage() {
 
   return (
     <div className="grid min-h-screen w-full grid-cols-[280px_1fr] bg-muted/40">
-      <div className="flex flex-col border-r bg-background">
-        <div className="flex h-[60px] items-center border-b px-6">
+      <div className="flex flex-col border-r bg-[#0B0014] text-white ">
+        <div className="flex h-[60px] text-2xl items-center border-b px-6">
           <Link href="#" className="flex items-center gap-2 font-semibold" prefetch={false}>
-            <TimerIcon className="h-6 w-6" />
-            <span>Taskmaster</span>
+            <TimerIcon className="h-6 w-6 text-[#26A7F7]" />
+            <span className="">TaskChain</span>
           </Link>
         </div>
         <div className="flex-1 overflow-auto py-2">
-          <nav className="grid gap-1 px-4 text-sm font-medium">
+          <nav className="grid gap-1 px-4 text-xl font-medium">
+          
             <Link
               href="#"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-primary transition-all hover:bg-muted"
+              className="flex items-center gap-5 rounded-lg px-3 py-3 text-primary transition-all hover:bg-[#022D50]"
               prefetch={false}
             >
               <UserIcon className="h-4 w-4" />
@@ -37,23 +38,16 @@ export function TaskMasterHomePage() {
             </Link>
             <Link
               href="#"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted"
+              className="flex items-center gap-3 rounded-lg px-3 py-3 text-muted-foreground transition-all hover:bg-[#022D50]"
               prefetch={false}
             >
               <SettingsIcon className="h-4 w-4" />
               Settings
             </Link>
-            <div className="relative">
-              <Input
-                type="search"
-                placeholder="Search tasks..."
-                className="w-full rounded-lg bg-muted px-8 py-2 text-sm"
-              />
-              <SearchIcon className="absolute left-2 top-2 h-4 w-4 text-muted-foreground" />
-            </div>
+            
             <Link
               href="#"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted"
+              className="flex items-center gap-3 rounded-lg px-3 py-3 text-muted-foreground transition-all hover:bg-[#022D50]"
               prefetch={false}
             >
               <ClockIcon className="h-4 w-4" />
@@ -61,7 +55,7 @@ export function TaskMasterHomePage() {
             </Link>
             <Link
               href="#"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted"
+              className="flex items-center gap-3 rounded-lg px-3 py-3 text-muted-foreground transition-all hover:bg-[#022D50]"
               prefetch={false}
             >
               <ListIcon className="h-4 w-4" />
@@ -71,11 +65,19 @@ export function TaskMasterHomePage() {
         </div>
       </div>
       <div className="flex flex-col">
-        <header className="flex h-[60px] items-center justify-between border-b bg-background px-6">
+        <header className="flex h-[60px] items-center justify-between border-b bg-gray-200 px-6">
           <h1 className="text-2xl font-bold">Welcome Taskmaster!</h1>
+          <div className=" ml-[45vw]">
+              <Input
+                type="search"
+                placeholder="Search tasks..."
+                className="w-full rounded-lg bg-muted px-8 py-2 text-sm"
+              />
+              <SearchIcon className="absolute left-2 top-2 h-4 w-4 text-muted-foreground" />
+            </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2 text-muted-foreground">
-              <Button onClick={handleCreateAccount}>Add Wallet</Button>
+              <Button onClick={handleCreateAccount} className="bg-[#0B0014] px-2 py-2 w-[6vw] h-[5vh] text-md hover:bg-[#17507e] text-white">Add Wallet</Button>
             </div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -104,7 +106,7 @@ export function TaskMasterHomePage() {
         </header>
         <main className="flex-1 p-4 md:p-6">
           <div className="space-y-4">
-            <Card>
+            <Card className="hover:bg-gray-200">
               <CardHeader className="pb-4">
                 <CardTitle>Design Team Meeting</CardTitle>
                 <CardDescription>Discuss new design concepts and review prototypes.</CardDescription>
@@ -112,11 +114,11 @@ export function TaskMasterHomePage() {
               <CardContent>
                 <div className="flex items-center justify-between">
                   <div className="text-sm text-muted-foreground">Due: 2023-05-15</div>
-                  <Button size="sm">Start</Button>
+                  <Button size="lg" className="bg-[#02213B] text-white hover:bg-[#0b6298]">Start</Button>
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="hover:bg-gray-200">
               <CardHeader className="pb-4">
                 <CardTitle>Finalize Marketing Campaign</CardTitle>
                 <CardDescription>Review and approve the final assets for the campaign.</CardDescription>
@@ -124,11 +126,11 @@ export function TaskMasterHomePage() {
               <CardContent>
                 <div className="flex items-center justify-between">
                   <div className="text-sm text-muted-foreground">Due: 2023-05-20</div>
-                  <Button size="sm">Start</Button>
+                  <Button size="lg" className="bg-[#02213B] text-white hover:bg-[#0b6298]">Start</Button>
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="hover:bg-gray-200">
               <CardHeader className="pb-4">
                 <CardTitle>Prepare Quarterly Report</CardTitle>
                 <CardDescription>Gather data and create the Q1 financial report.</CardDescription>
@@ -136,11 +138,11 @@ export function TaskMasterHomePage() {
               <CardContent>
                 <div className="flex items-center justify-between">
                   <div className="text-sm text-muted-foreground">Due: 2023-04-30</div>
-                  <Button size="sm">Start</Button>
+                  <Button size="lg" className="bg-[#02213B] text-white hover:bg-[#0b6298]">Start</Button>
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="hover:bg-gray-200">
               <CardHeader className="pb-4">
                 <CardTitle>Onboard New Hire</CardTitle>
                 <CardDescription>Complete the onboarding process for the new sales representative.</CardDescription>
@@ -148,11 +150,11 @@ export function TaskMasterHomePage() {
               <CardContent>
                 <div className="flex items-center justify-between">
                   <div className="text-sm text-muted-foreground">Due: 2023-06-01</div>
-                  <Button size="sm">Start</Button>
+                  <Button size="lg" className="bg-[#02213B] text-white hover:bg-[#0b6298]">Start</Button>
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="hover:bg-gray-200">
               <CardHeader className="pb-4">
                 <CardTitle>Migrate to New CRM</CardTitle>
                 <CardDescription>Transfer all customer data to the new CRM system.</CardDescription>
@@ -160,11 +162,11 @@ export function TaskMasterHomePage() {
               <CardContent>
                 <div className="flex items-center justify-between">
                   <div className="text-sm text-muted-foreground">Due: 2023-07-01</div>
-                  <Button size="sm">Start</Button>
+                  <Button size="lg" className="bg-[#02213B] text-white hover:bg-[#0b6298]">Start</Button>
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="hover:bg-gray-200">
               <CardHeader className="pb-4">
                 <CardTitle>Develop New Website</CardTitle>
                 <CardDescription>Design and build the new company website.</CardDescription>
@@ -172,7 +174,7 @@ export function TaskMasterHomePage() {
               <CardContent>
                 <div className="flex items-center justify-between">
                   <div className="text-sm text-muted-foreground">Due: 2023-08-15</div>
-                  <Button size="sm">Start</Button>
+                  <Button size="lg" className="bg-[#02213B] text-white hover:bg-[#0b6298]">Start</Button>
                 </div>
               </CardContent>
             </Card>
