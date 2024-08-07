@@ -21,26 +21,21 @@ export default function TaskMasterHomePage() {
 
   return (
     <div className="grid min-h-screen w-full grid-cols-[280px_1fr] bg-muted/40">
-      <div className="flex flex-col border-r bg-background">
-        <div className="flex h-[60px] items-center border-b px-6">
+      
+      
+      <div className="flex flex-col border-r bg-[#0B0014] text-white ">
+        <div className="flex h-[60px] text-2xl items-center border-b px-6">
           <Link href="#" className="flex items-center gap-2 font-semibold" prefetch={false}>
-            <TimerIcon className="h-6 w-6" />
-            <span>Taskmaster</span>
+            <TimerIcon className="h-6 w-6 text-[#26A7F7]" />
+            <span className="">TaskChain</span>
           </Link>
         </div>
-        <div className="relative">
-              <Input
-                type="search"
-                placeholder="Search tasks..."
-                className="w-full rounded-lg bg-muted px-8 py-2 text-sm"
-              />
-              <SearchIcon className="absolute left-2 top-2 h-4 w-4 text-muted-foreground" />
-            </div>
         <div className="flex-1 overflow-auto py-2">
-          <nav className="grid gap-1 px-4 text-sm font-medium">
+          <nav className="grid gap-1 px-4 text-xl font-medium">
+          
             <Link
               href="#"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-primary transition-all hover:bg-muted"
+              className="flex items-center gap-5 rounded-lg px-3 py-3 text-primary transition-all hover:bg-[#022D50]"
               prefetch={false}
             >
               <UserIcon className="h-4 w-4" />
@@ -48,7 +43,7 @@ export default function TaskMasterHomePage() {
             </Link>
             <Link
               href="#"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted"
+              className="flex items-center gap-3 rounded-lg px-3 py-3 text-muted-foreground transition-all hover:bg-[#022D50]"
               prefetch={false}
             >
               <SettingsIcon className="h-4 w-4" />
@@ -57,7 +52,7 @@ export default function TaskMasterHomePage() {
             
             <Link
               href="#"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted"
+              className="flex items-center gap-3 rounded-lg px-3 py-3 text-muted-foreground transition-all hover:bg-[#022D50]"
               prefetch={false}
             >
               <ClockIcon className="h-4 w-4" />
@@ -65,7 +60,7 @@ export default function TaskMasterHomePage() {
             </Link>
             <Link
               href="#"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted"
+              className="flex items-center gap-3 rounded-lg px-3 py-3 text-muted-foreground transition-all hover:bg-[#022D50]"
               prefetch={false}
             >
               <ListIcon className="h-4 w-4" />
@@ -74,12 +69,23 @@ export default function TaskMasterHomePage() {
           </nav>
         </div>
       </div>
+
+
+
       <div className="flex flex-col">
-        <header className="flex h-[60px] items-center justify-between border-b bg-background px-6">
+      <header className="flex h-[60px] items-center justify-between border-b bg-gray-200 px-6">
           <h1 className="text-2xl font-bold">Welcome Taskmaster!</h1>
+          <div className=" ml-[45vw]">
+              <Input
+                type="search"
+                placeholder="Search tasks..."
+                className="w-full rounded-lg bg-muted px-8 py-2 text-sm"
+              />
+              <SearchIcon className="absolute left-2 top-2 h-4 w-4 text-muted-foreground" />
+            </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2 text-muted-foreground">
-              <Button onClick={handleCreateAccount}>Add Wallet</Button>
+              <Button onClick={handleCreateAccount} className="bg-[#0B0014] px-2 py-2 w-[6vw] h-[5vh] text-md hover:bg-[#17507e] text-white">Add Wallet</Button>
             </div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -97,7 +103,6 @@ export default function TaskMasterHomePage() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
-
                 <DropdownMenuSeparator />
                 <DropdownMenuItem>Settings</DropdownMenuItem>
                 <DropdownMenuItem>Support</DropdownMenuItem>
@@ -133,7 +138,7 @@ export default function TaskMasterHomePage() {
                 <Label htmlFor="file-upload">Attach Files</Label>
                 <Input id="file-upload" type="file" multiple />
               </div>
-              <Button type="submit" className="justify-self-end">
+              <Button type="submit" className="justify-self-end bg-[#0B0014] px-2 py-2 w-[6vw] h-[5vh] text-md hover:bg-[#17507e] text-white">
                 Post Task
               </Button>
             </form>
@@ -159,7 +164,7 @@ export default function TaskMasterHomePage() {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button>Apply</Button>
+                  <Button className="bg-[#0B0014] px-2 py-2 w-[6vw] h-[5vh] text-md hover:bg-[#17507e] text-white">Apply</Button>
                 </CardFooter>
               </Card>
               <Card>
@@ -182,7 +187,7 @@ export default function TaskMasterHomePage() {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button>Apply</Button>
+                  <Button className="bg-[#0B0014] px-2 py-2 w-[6vw] h-[5vh] text-md hover:bg-[#17507e] text-white">Apply</Button>
                 </CardFooter>
               </Card>
               <Card>
@@ -204,7 +209,7 @@ export default function TaskMasterHomePage() {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button>Apply</Button>
+                  <Button className="bg-[#0B0014] px-2 py-2 w-[6vw] h-[5vh] text-md hover:bg-[#17507e] text-white">Apply</Button>
                 </CardFooter>
               </Card>
             </div>
@@ -215,7 +220,7 @@ export default function TaskMasterHomePage() {
   )
 }
 
-function ClockIcon(props: any) {
+function ClockIcon(props) {
   return (
     <svg
       {...props}
@@ -236,7 +241,7 @@ function ClockIcon(props: any) {
 }
 
 
-function ListIcon(props: any) {
+function ListIcon(props) {
   return (
     <svg
       {...props}
@@ -261,7 +266,7 @@ function ListIcon(props: any) {
 }
 
 
-function SearchIcon(props: any) {
+function SearchIcon(props) {
   return (
     <svg
       {...props}
@@ -282,7 +287,7 @@ function SearchIcon(props: any) {
 }
 
 
-function SettingsIcon(props: any) {
+function SettingsIcon(props) {
   return (
     <svg
       {...props}
@@ -303,7 +308,7 @@ function SettingsIcon(props: any) {
 }
 
 
-function TimerIcon(props: any) {
+function TimerIcon(props) {
   return (
     <svg
       {...props}
@@ -325,7 +330,7 @@ function TimerIcon(props: any) {
 }
 
 
-function UserIcon(props: any) {
+function UserIcon(props) {
   return (
     <svg
       {...props}
@@ -346,7 +351,7 @@ function UserIcon(props: any) {
 }
 
 
-function WalletIcon(props: any) {
+function WalletIcon(props) {
     return (
       <svg
         {...props}
