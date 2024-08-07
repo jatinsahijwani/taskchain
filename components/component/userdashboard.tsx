@@ -39,26 +39,20 @@ import { Badge } from "@/components/ui/badge"
 export default function Userdashboard() {
   return (
     <div className="flex min-h-screen w-full">
-      <div className="flex flex-col border-r bg-background">
-        <div className="flex h-[60px] items-center border-b px-6">
+      
+      <div className="flex flex-col w-[35vh] border-r bg-[#0B0014] text-white ">
+        <div className="flex h-[60px] text-2xl items-center border-b px-6">
           <Link href="#" className="flex items-center gap-2 font-semibold" prefetch={false}>
-            <TimerIcon className="h-6 w-6" />
-            <span>Taskmaster</span>
+            <TimerIcon className="h-6 w-6 text-[#26A7F7]" />
+            <span className="">TaskChain</span>
           </Link>
         </div>
         <div className="flex-1 overflow-auto py-2">
-          <nav className="grid gap-1 px-4 text-sm font-medium">
-          <div className="relative">
-              <Input
-                type="search"
-                placeholder="Search tasks..."
-                className="w-full rounded-lg bg-muted px-8 py-2 text-sm"
-              />
-              <SearchIcon className="absolute left-2 top-2 h-4 w-4 text-muted-foreground" />
-            </div>
+          <nav className="grid gap-1 px-4 text-xl font-medium">
+          
             <Link
               href="#"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-primary transition-all hover:bg-muted"
+              className="flex items-center gap-5 rounded-lg px-3 py-3 text-primary transition-all hover:bg-[#022D50]"
               prefetch={false}
             >
               <UserIcon className="h-4 w-4" />
@@ -66,15 +60,16 @@ export default function Userdashboard() {
             </Link>
             <Link
               href="#"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted"
+              className="flex items-center gap-3 rounded-lg px-3 py-3 text-muted-foreground transition-all hover:bg-[#022D50]"
               prefetch={false}
             >
               <SettingsIcon className="h-4 w-4" />
               Settings
             </Link>
+            
             <Link
               href="#"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted"
+              className="flex items-center gap-3 rounded-lg px-3 py-3 text-muted-foreground transition-all hover:bg-[#022D50]"
               prefetch={false}
             >
               <ClockIcon className="h-4 w-4" />
@@ -82,7 +77,7 @@ export default function Userdashboard() {
             </Link>
             <Link
               href="#"
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:bg-muted"
+              className="flex items-center gap-3 rounded-lg px-3 py-3 text-muted-foreground transition-all hover:bg-[#022D50]"
               prefetch={false}
             >
               <ListIcon className="h-4 w-4" />
@@ -92,25 +87,8 @@ export default function Userdashboard() {
         </div>
       </div>
       
-      <div className="flex flex-1 flex-col sm:pl-14 md:pl-18 lg:pl-20">
-        <header className="sticky top-0 z-30 flex h-14 items-center gap-4 border-b bg-background px-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6 md:h-16 md:px-8 lg:h-20 lg:px-10">
-          <Breadcrumb className="hidden md:flex">
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="#" prefetch={false}>
-                    Dashboard
-                  </Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Tasks</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-          
-        </header>
+      <div className="flex flex-1 flex-col ">
+        
         <main className="grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8 md:p-8 lg:gap-10 lg:p-10">
           <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             <Card>
