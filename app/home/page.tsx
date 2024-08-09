@@ -1,12 +1,8 @@
-import React from 'react'
-import  Home from '@/components/component/home'
+import { TaskMasterHomePage } from "@/components/task-master-home-page";
+import Image from "next/image";
 
-const page = () => {
+export default function Home() {
   return (
-    <div>
-      <Home/>
-    </div>
-  )
+    <TaskMasterHomePage />
+  );
 }
-
-export default page
