@@ -100,7 +100,13 @@ export default function Home() {
           <div className="p-6">
             <h2 className="text-xl font-semibold mb-2">Web Development ($100)</h2>
             <p className="text-muted-foreground mb-4">Skilled web developers to build your online presence.</p>
-            <Button className="w-full bg-[#2d8ddb] hover:bg-[#17507e] text-white">Start</Button>
+            <Link
+              href="/work"
+             
+            >
+             <Button className="w-full bg-[#2d8ddb] hover:bg-[#17507e] text-white">Start</Button>
+            </Link>
+            
           </div>
         </div>
         <div className="bg-white rounded-lg shadow-md overflow-hidden hover:bg-gray-300">
